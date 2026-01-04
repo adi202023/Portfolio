@@ -1,0 +1,116 @@
+.skills {
+  background: linear-gradient(135deg, var(--sand-beige) 0%, var(--warm-white) 100%);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+  align-items: stretch;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.skill-category-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px var(--shadow);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(74, 144, 164, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  height: 100%;
+}
+
+.skill-category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(74, 144, 164, 0.2);
+}
+
+.skill-category-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--deep-blue);
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--soft-peach);
+  flex-shrink: 0;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.skill-tag {
+  background: rgba(74, 144, 164, 0.1);
+  color: var(--deep-blue);
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(74, 144, 164, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+  background: rgba(74, 144, 164, 0.15);
+  border-color: var(--ocean-blue);
+  box-shadow: 0 4px 12px rgba(74, 144, 164, 0.15);
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .skill-category-card {
+    padding: 20px;
+    min-height: auto;
+  }
+  
+  .skill-category-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Better alignment for all cards */
+@media (min-width: 1025px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+  }
+  
+  .skill-category-card {
+    max-width: 100%;
+    justify-content: space-between;
+  }
+  
+  /* Make Soft Skills card span full width on desktop */
+  .soft-skills-card {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Make Soft Skills card span full width on tablet too */
+  .soft-skills-card {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
+}
+
