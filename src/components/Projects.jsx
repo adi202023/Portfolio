@@ -26,6 +26,21 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'Saarthi',
+      subtitle: 'Privacy-First Digital Safety Infrastructure',
+      description: 'A privacy-first platform built to enhance personal safety using cryptographic identity, secure emergency escalation, and intelligent route monitoring. Uses cryptographic proofs to ensure user privacy while providing resilient emergency protection and real-time tracking.',
+      tech: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Leaflet', 'Turf.js', 'OSRM', 'Socket.io', 'Web Crypto API', 'Node.js', 'Express'],
+      github: 'https://github.com/adi202023/Saarthi',
+      live: 'https://saarthi-teal.vercel.app',
+      features: [
+        'Cryptographic Identity Vault — Securely store hashed identity proofs',
+        'Safe Route Monitoring — Geo-fenced tracking with real-time deviation alerts',
+        'Emergency Alerts — RSA-signed distress signals for secure escalation',
+        'Police Portal — Live tactical dashboard with route insights',
+        'Cab Portal — Simulated OSRM routing with dynamic risk scoring'
+      ]
+    },
+    {
       title: 'Bharat-ID-AiDeVote',
       subtitle: 'AI-Powered Decentralized Voting System',
       description: 'Blockchain-based voting system to prevent fraud with AI-based facial & document verification. Features encrypted vote storage and auditability for transparent and secure democracy.',
@@ -108,14 +123,16 @@ const Projects = () => {
                   <FaGithub /> GitHub
                 </a>
               )}
-              <a 
-                href={project.github} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                <FaExternalLinkAlt /> View Project
-              </a>
+              {(project.live || project.github) && (
+                <a 
+                  href={project.live || project.github} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  <FaExternalLinkAlt /> {project.live ? 'Live Demo' : 'View Project'}
+                </a>
+              )}
             </div>
           </div>
         ))}
