@@ -39,11 +39,11 @@ const Experience = () => {
           <div className="experience-cards">
             <div className="experience-card">
               <div className="experience-header">
-                <h4 className="experience-title">IEEE Member</h4>
+                <h4 className="experience-title">IEEE RAS Secretary</h4>
                 <span className="experience-org">Dayananda Sagar University</span>
               </div>
               <p className="experience-description">
-                Active member of IEEE, contributing to various technical events and activities.
+                Serving as Secretary of IEEE RAS, supporting chapter activities, technical events, and member coordination.
               </p>
             </div>
             
