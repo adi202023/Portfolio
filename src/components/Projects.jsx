@@ -45,6 +45,7 @@ const Projects = () => {
       subtitle: 'AI-Powered Decentralized Voting System',
       description: 'Blockchain-based voting system to prevent fraud with AI-based facial & document verification. Features encrypted vote storage and auditability for transparent and secure democracy.',
       tech: ['ReactJS', 'Flask', 'Python', 'Blockchain', 'TensorFlow'],
+      github: 'https://github.com/adi202023/Bharat-ID-Shield',
       features: [
         'Blockchain-based fraud prevention',
         'AI-based facial & document verification',
