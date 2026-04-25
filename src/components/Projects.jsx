@@ -73,6 +73,7 @@ const Projects = () => {
       description: 'A social engaging platform where people get rewarded by completing tasks given by cafe and restaurant owners. Users can browse challenges from local businesses, complete fun tasks, share their experiences, and earn rewards.',
       tech: ['React Native', 'Expo SDK', 'React Navigation', 'Expo Linear Gradient', 'Expo Image Picker', 'Ionicons'],
       github: 'https://github.com/adi202023/Reel-2-Reality.git',
+      live: 'https://reel-2-reality.vercel.app/',
       features: [
         'Challenge feed from local businesses',
         'Friend selection',
