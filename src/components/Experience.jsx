@@ -39,7 +39,7 @@ const Experience = () => {
           <div className="experience-cards">
             <div className="experience-card">
               <div className="experience-header">
-                <h4 className="experience-title">IEEE RAS Secretary</h4>
+                <h4 className="experience-title">IEEE RAS Chair</h4>
                 <span className="experience-org">Dayananda Sagar University</span>
               </div>
               <p className="experience-description">
@@ -49,7 +49,7 @@ const Experience = () => {
             
             <div className="experience-card">
               <div className="experience-header">
-                <h4 className="experience-title">Web-Master</h4>
+                <h4 className="experience-title">Tech Head</h4>
                 <span className="experience-org">ACM-DSU</span>
               </div>
               <p className="experience-description">
